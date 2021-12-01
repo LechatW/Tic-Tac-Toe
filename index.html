@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS, Javascript and - of course - lots of love!</p>
     </header>
@@ -20,8 +23,8 @@
                     <input type="text" name="playername" id="playername">
                 </div>
                 <div>
-                    <button type="button">Cancel</button>
-                    <button type="submit">Confirm</button>
+                    <button type="button" class="btn btn-alt">Cancel</button>
+                    <button type="submit" class="btn">Confirm</button>
                 </div>
             </form>
         </aside>
@@ -32,7 +35,7 @@
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <p>X</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -40,12 +43,12 @@
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
                         <p>O</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
             </ol>
         </section>
-        <button>Start New Game</button>
+        <button class="btn">Start New Game</button>
         <section id="active-game">
             <article>
                 <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
