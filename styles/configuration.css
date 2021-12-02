@@ -33,6 +33,10 @@
     background-color: rgb(253, 219, 219);
 }
 
+#game-errors.error {
+    color: rgb(136, 2,2);
+}
+
 #game-configuration {
     width: 90%;
     max-width: 40rem;
